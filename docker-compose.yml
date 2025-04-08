@@ -13,7 +13,7 @@ services:
       - ./volumes/etcd:/etcd
     command: etcd -advertise-client-urls=http://0.0.0.0:2379 -listen-client-urls=http://0.0.0.0:2379 --data-dir=/etcd
     networks:
-      - ollama_network
+      - milvus_network
 
   minio:
     container_name: milvus-minio
@@ -28,7 +28,7 @@ services:
       - ./volumes/minio:/minio_data
     command: minio server /minio_data --console-address ":9001"
     networks:
-      - ollama_network
+      - milvus_network
 
   standalone:
     container_name: milvus-standalone
@@ -46,7 +46,7 @@ services:
       - "etcd"
       - "minio"
     networks:
-      - ollama_network
+      - milvus_network
 
   milvus-python:
     container_name: milvus-python
@@ -57,8 +57,8 @@ services:
       - ./scripts:/scripts
     command: tail -f /dev/null
     networks:
-      - ollama_network
+      - milvus_network
 
 networks:
-  ollama_network:
+  milvus_network:
     driver: bridge
