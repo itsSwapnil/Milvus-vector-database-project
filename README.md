@@ -26,27 +26,26 @@ numpy
 
 ## 🐳 Docker Setup
 
-### 1. Clone the Repository
+### Clone the Repository
 
-``` git clone https://github.com/yourusername/semantic-web-milvus.git
+```
+1. git clone https://github.com/yourusername/semantic-web-milvus.git
 cd semantic-web-milvus
-2. Start Docker Services
 
+2. Start Docker Services
 docker-compose up --build -d
 This will spin up:
 
 Milvus vector database
-
 Etcd (metadata service)
-
 MinIO (object storage)
 
 Python container (milvus-python) with all dependencies pre-installed
 
 3. Access Python Container
-
 docker exec -it milvus-python bash
-Run your main script:
+
+4. Run your main script:
 python your_script.py
 ```
 
