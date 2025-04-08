@@ -6,15 +6,15 @@ This project asynchronously scrapes web content, generates semantic text chunks 
 This project scrapes content from multiple websites asynchronously, tokenizes and embeds the content into semantic chunks using Sentence Transformers, and stores them in a Milvus vector database for efficient similarity search and retrieval.
 
 ### 📦 Dependencies
-Python 3.9
-aiohttp
-nltk
-pandas
-sentence-transformers
-pymilvus
-langchain
-scikit-learn
-numpy
+1. Python 3.9
+2. aiohttp
+3. nltk
+4. pandas
+5. sentence-transformers
+6. pymilvus
+7. langchain
+8. scikit-learn
+9. numpy
 
 ## 🚀 Features
 
