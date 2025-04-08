@@ -1,11 +1,3 @@
-"""from langchain.document_loaders import WebBaseLoader
-import re
-urls=["https://batteryuniversity.com/article/bu-804a-corrosion-shedding-and-internal-short"]
-loader=WebBaseLoader(urls)
-docs=loader.load()
-texts = " ".join(doc.page_content for doc in docs)
-texts= re.sub(r'\s+', ' ', texts).strip()"""
-
 import asyncio
 import aiohttp
 import re
@@ -22,9 +14,6 @@ from langchain.document_loaders import WebBaseLoader
 nltk.download('punkt')
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-
-# docker-compose up --build -d
-# docker exec -it milvus-python bash
 
 class SemanticTextChunker:
     def __init__(self, chunk_size: int = 500, chunk_overlap: int = 50):
