@@ -1,0 +1,34 @@
+FROM python:3.9
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install necessary system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+RUN pip install --no-cache-dir \
+    boto3 \
+    PyPDF2 \
+    langchain \
+    pymilvus \
+    langchain_ollama \
+    scikit-learn \
+    numpy \
+    pandas \
+    tqdm \
+    streamlit \
+    sentence-transformers \
+    langchain-community    
+
+# Set working directory
+WORKDIR /scripts
+
+# Copy scripts
+COPY scripts /scripts
+
+# Default command
+CMD ["python3"]
