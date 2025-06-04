@@ -74,5 +74,14 @@ Knowledge base construction with semantic search
 
 Content recommendation systems
 
+---
+🙋 Author
+
+LinkedIn: http://www.linkedin.com/in/SwapnilTaware
+
+GitHub: https://github.com/itsSwapnil
+
+---
+
 ### 📜 License
 This project is licensed under the MIT License.
