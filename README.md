@@ -16,6 +16,20 @@ This project scrapes content from multiple websites asynchronously, tokenizes an
 8. scikit-learn
 9. numpy
 
+
+## 🔍 What It Does
+🌐 Scrapes web content asynchronously
+
+✂️ Tokenizes and chunks data using NLTK
+
+🧠 Converts text into dense semantic embeddings
+
+🧲 Stores embeddings in Milvus for fast vector search
+
+🔄 Supports Dockerized deployment for consistent setup
+
+
+
 ## 🚀 Features
 
 - Asynchronous web scraping with `aiohttp` and `langchain`
