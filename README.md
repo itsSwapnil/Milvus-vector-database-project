@@ -95,6 +95,8 @@ LinkedIn: http://www.linkedin.com/in/SwapnilTaware
 
 GitHub: https://github.com/itsSwapnil
 
+Email: tawareswapnil23@gmail.com
+
 ---
 
 ### 📜 License
